@@ -17,9 +17,9 @@ function delay( timeout ) {
 }
 puppeteer.launch({
      headless : false  
-   , devtools : true  
+   , devtools : true     //밑에는 크롬 경로 입력해주세요.
    , executablePath : "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"//크로미움으로 boj 접속시 그림찾기가 나타남. 
-   //                                                                                크로미움 대신 크롬으로 동작함.
+   //                                                                       크로미움 대신 크롬으로 동작함.
    , userDataDir : "C:/Users/DELL/AppData/Local/Google/Chrome/User Data" //DELL 부분에 사용자 계정 입력해야합니다.
   
 }).then(async browser => {
